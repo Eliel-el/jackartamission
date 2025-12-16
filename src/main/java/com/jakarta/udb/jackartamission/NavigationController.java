@@ -9,7 +9,7 @@ import java.io.Serializable;
 public class NavigationController implements Serializable {
 
     public String voirApropos() {
-        return "/pages/apropos?faces-redirect=true";
+        return "/pages/a_propos?faces-redirect=true";
     }
 
     public String listeLieux() {
