@@ -1,0 +1,16 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.0">
+    <persistence-unit name="mavenproject1PU" transaction-type="JTA">
+        
+        <jta-data-source>jdbc/__default</jta-data-source>
+
+        <properties>
+            <!-- Crée automatiquement les tables -->
+            <property name="jakarta.persistence.schema-generation.database.action"
+                      value="create"/>
+
+            <property name="eclipselink.logging.level" value="FINE"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
